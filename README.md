@@ -2,13 +2,13 @@
 
 # 🚢 Titanic Survival Prediction using Machine Learning
 
-### *Predicting passenger survival with supervised Machine Learning models*
+### *End-to-End Supervised Machine Learning Classification Project*
 
 <br>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
-![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green?style=for-the-badge)
+![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 </div>
@@ -17,9 +17,9 @@
 
 # 📌 Project Overview
 
-This project aims to predict passenger survival on the Titanic using several supervised Machine Learning classification algorithms.
+This project aims to predict passenger survival on the Titanic using multiple supervised Machine Learning classification algorithms.
 
-The project follows a complete end-to-end Machine Learning workflow including:
+The project follows a complete Machine Learning workflow including:
 
 - Data preprocessing
 - Exploratory Data Analysis (EDA)
@@ -121,11 +121,11 @@ The models were evaluated using:
 
 | Metric | Purpose |
 |---|---|
-| Accuracy Score | Overall model performance |
+| Accuracy Score | Overall performance |
 | Confusion Matrix | Error analysis |
-| Classification Report | Precision, Recall, F1-score |
+| Classification Report | Precision / Recall / F1-score |
 | Feature Importance | Identify influential variables |
-| Learning Curves | Detect overfitting / underfitting |
+| Learning Curves | Detect overfitting and underfitting |
 
 ---
 
@@ -133,31 +133,31 @@ The models were evaluated using:
 
 ## 🔹 Model Accuracy Comparison
 
-![Model Comparison](images/model_comparison.png)
+![Model Comparison](image/Model%20Accuracy%20Comparison.png)
 
 ---
 
 ## 🔹 Decision Tree Visualization
 
-![Decision Tree](images/decision_tree.png)
+![Decision Tree](image/decision_tree.png)
 
 ---
 
 ## 🔹 KNN Accuracy Curve
 
-![KNN Curve](images/knn_accuracy_curve.png)
+![KNN Curve](image/KNN:%20Accuracy%20vs%20K.png)
 
 ---
 
 ## 🔹 SVM Overfitting vs Underfitting Analysis
 
-![SVM Curve](images/svm_overfitting_curve.png)
+![SVM Curve](image/svm_overfitting_curve.png)
 
 ---
 
 ## 🔹 XGBoost Feature Importance
 
-![XGBoost Importance](images/xgboost_importance.png)
+![XGBoost Importance](image/Feature%20Importance%20-%20XGBoost.png)
 
 ---
 
@@ -196,7 +196,7 @@ This project explores several important Machine Learning concepts:
 titanic-ml-classification/
 │
 ├── data/
-├── images/
+├── image/
 ├── notebooks/
 │   └── titanic_classification.ipynb
 │
@@ -240,7 +240,7 @@ jupyter notebook
 | Model | Performance |
 |---|---|
 | SVM | Best overall accuracy |
-| XGBoost | Strong gradient boosting performance |
+| XGBoost | Strong boosting performance |
 | Random Forest | Strong generalization ability |
 
 ---
@@ -270,7 +270,7 @@ Possible future enhancements:
 
 <div align="center">
 
-### Marouane Elallaoui
+## Marouane Elallaoui
 
 Machine Learning & Data Science Enthusiast
 
