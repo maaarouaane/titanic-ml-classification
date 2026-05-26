@@ -272,7 +272,7 @@ Possible future enhancements:
 
 ## Marouane Elallaoui
 
-Machine Learning & Data Science Enthusiast
+Machine Learning Engineer 
 
 </div>
 
