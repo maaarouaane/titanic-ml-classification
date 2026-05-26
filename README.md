@@ -2,41 +2,43 @@
 
 # 🚢 Titanic Survival Prediction using Machine Learning
 
-*Predicting who survives — one algorithm at a time.*
+### *Predicting passenger survival with supervised Machine Learning models*
 
-<br/>
+<br>
 
 ![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn)
-![XGBoost](https://img.shields.io/badge/XGBoost-Boosting-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?style=for-the-badge&logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-green?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 </div>
 
 ---
 
-## 📌 Project Overview
+# 📌 Project Overview
 
-This project focuses on predicting passenger survival on the Titanic using multiple Machine Learning classification algorithms.
+This project aims to predict passenger survival on the Titanic using several supervised Machine Learning classification algorithms.
 
-The workflow covers a complete end-to-end Machine Learning pipeline including:
+The project follows a complete end-to-end Machine Learning workflow including:
 
 - Data preprocessing
+- Exploratory Data Analysis (EDA)
 - Feature engineering
 - Feature selection
 - Model training
 - Hyperparameter tuning
-- Overfitting / underfitting analysis
+- Overfitting / Underfitting analysis
 - Model comparison
-- Data visualization
+- Visualization and interpretation
 
-> Built using the famous **Titanic - Machine Learning from Disaster** dataset from Kaggle.
+The dataset used is the famous **Titanic - Machine Learning from Disaster** dataset from Kaggle.
 
 ---
 
-## 📂 Dataset
+# 📂 Dataset
 
-🔗 **Source:** [https://www.kaggle.com/competitions/titanic](https://www.kaggle.com/competitions/titanic)
+🔗 Dataset Source:  
+https://www.kaggle.com/competitions/titanic
 
 The dataset contains passenger information such as:
 
@@ -50,36 +52,45 @@ The dataset contains passenger information such as:
 | `SibSp` | Siblings / spouses aboard |
 | `Embarked` | Port of embarkation |
 
-**Target variable:**
+### 🎯 Target Variable
 
 ```python
-Survived   # 1 → Survived  |  0 → Did not survive
+Survived
 ```
+
+- `1` → Survived
+- `0` → Did not survive
 
 ---
 
-## ⚙️ Machine Learning Workflow
+# ⚙️ Machine Learning Workflow
 
-### 1️⃣ Data Cleaning
+## 1️⃣ Data Cleaning
+
 - Missing value handling
-- Cabin column removal
 - Age imputation
+- Cabin removal
 - Encoding categorical variables
 
-### 2️⃣ Feature Engineering
+---
 
-New features were created such as:
+## 2️⃣ Feature Engineering
+
+New features were created:
 
 ```python
 FamilySize
 IsAlone
 ```
 
-### 3️⃣ Feature Selection
+---
+
+## 3️⃣ Feature Selection
 
 Feature importance analysis was performed using:
-- **SelectKBest**
-- **Chi-Square Test**
+
+- SelectKBest
+- Chi-Square Test
 
 Final selected features:
 
@@ -89,9 +100,11 @@ Final selected features:
 
 ---
 
-## 🤖 Models Implemented
+# 🤖 Machine Learning Models
 
-| Model | Type |
+The following classification algorithms were implemented and compared:
+
+| Model | Category |
 |---|---|
 | Logistic Regression | Linear Model |
 | Decision Tree | Tree-Based |
@@ -102,53 +115,68 @@ Final selected features:
 
 ---
 
-## 📊 Model Evaluation
+# 📊 Model Evaluation
 
 The models were evaluated using:
 
 | Metric | Purpose |
 |---|---|
-| Accuracy Score | Overall performance |
-| Confusion Matrix | Error breakdown |
-| Classification Report | Precision, Recall, F1 |
-| Feature Importance | Key predictors |
-| Learning Curves | Generalization check |
-| Overfitting / Underfitting Analysis | Bias-variance diagnosis |
+| Accuracy Score | Overall model performance |
+| Confusion Matrix | Error analysis |
+| Classification Report | Precision, Recall, F1-score |
+| Feature Importance | Identify influential variables |
+| Learning Curves | Detect overfitting / underfitting |
 
 ---
 
-## 📈 Visualizations
+# 📈 Visualizations
 
-### 🔹 Model Comparison
+## 🔹 Model Accuracy Comparison
+
 ![Model Comparison](images/model_comparison.png)
 
-### 🔹 Decision Tree Visualization
+---
+
+## 🔹 Decision Tree Visualization
+
 ![Decision Tree](images/decision_tree.png)
 
-### 🔹 KNN Accuracy Curve
+---
+
+## 🔹 KNN Accuracy Curve
+
 ![KNN Curve](images/knn_accuracy_curve.png)
 
-### 🔹 XGBoost Feature Importance
+---
+
+## 🔹 SVM Overfitting vs Underfitting Analysis
+
+![SVM Curve](images/svm_overfitting_curve.png)
+
+---
+
+## 🔹 XGBoost Feature Importance
+
 ![XGBoost Importance](images/xgboost_importance.png)
 
 ---
 
-## 🧠 Key Machine Learning Concepts Explored
+# 🧠 Key Machine Learning Concepts Explored
 
-| Concept | Description |
-|---|---|
-| Classification Algorithms | Core prediction methods |
-| Bias vs Variance | Generalization trade-off |
-| Overfitting & Underfitting | Model health analysis |
-| Hyperparameter Tuning | Optimizing model performance |
-| Ensemble Learning | Combining weak learners |
-| Boosting | Sequential error correction |
-| Feature Importance | Understanding key predictors |
-| Model Generalization | Performance on unseen data |
+This project explores several important Machine Learning concepts:
+
+- Classification algorithms
+- Bias vs Variance tradeoff
+- Overfitting and Underfitting
+- Hyperparameter tuning
+- Ensemble Learning
+- Gradient Boosting
+- Feature Importance
+- Model Generalization
 
 ---
 
-## 🛠️ Technologies Used
+# 🛠️ Technologies Used
 
 | Technology | Purpose |
 |---|---|
@@ -162,82 +190,89 @@ The models were evaluated using:
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
 ```bash
 titanic-ml-classification/
 │
-├── data/                          # Raw and processed datasets
-├── images/                        # Visualization outputs
+├── data/
+├── images/
 ├── notebooks/
-│   └── titanic_classification.ipynb   # Main notebook
+│   └── titanic_classification.ipynb
 │
-├── README.md                      # Project documentation
-├── requirements.txt               # Dependencies
+├── README.md
+├── requirements.txt
 └── .gitignore
 ```
 
 ---
 
-## 🚀 Installation & Usage
+# 🚀 Installation
 
-**1 — Clone the repository:**
+## Clone the repository
+
 ```bash
-git clone https://github.com/your-username/titanic-ml-classification.git
+git clone https://github.com/maaarouaane/titanic-ml-classification.git
 ```
 
-**2 — Install dependencies:**
+---
+
+## Install dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-**3 — Launch Jupyter Notebook:**
+---
+
+## Launch Jupyter Notebook
+
 ```bash
 jupyter notebook
 ```
 
 ---
 
-## 🎯 Results
+# 🎯 Results
 
-### 🏆 Best Performing Models
+## 🏆 Best Performing Models
 
-> ✅ **Random Forest** — Best generalization across test data  
-> ✅ **XGBoost** — Highest accuracy with gradient boosting
-
-### ⭐ Most Influential Features
-
-```
-1. Sex        ████████████████████
-2. Fare       ███████████████
-3. Pclass     ████████████
-4. Age        █████████
-```
+| Model | Performance |
+|---|---|
+| SVM | Best overall accuracy |
+| XGBoost | Strong gradient boosting performance |
+| Random Forest | Strong generalization ability |
 
 ---
 
-## 📚 Future Improvements
+## ⭐ Most Influential Features
+
+- Sex
+- Fare
+- Pclass
+- Age
+
+---
+
+# 📚 Future Improvements
 
 Possible future enhancements:
 
-- [ ] Cross Validation
-- [ ] GridSearchCV
-- [ ] Ensemble Stacking
-- [ ] Deep Learning Models
-- [ ] Advanced Feature Engineering
+- Cross Validation
+- GridSearchCV
+- Ensemble Stacking
+- Deep Learning Models
+- Advanced Feature Engineering
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 <div align="center">
 
-**Marouane Elallaoui**  
-*Machine Learning & Data Science Enthusiast*
+### Marouane Elallaoui
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/your-username)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
-[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://kaggle.com/your-profile)
+Machine Learning & Data Science Enthusiast
 
 </div>
 
@@ -245,6 +280,6 @@ Possible future enhancements:
 
 <div align="center">
 
-*Feel free to ⭐ star the repo, 🍴 fork the project, or share your feedback 🚀*
+⭐ Feel free to star the repository if you found this project useful.
 
 </div>
